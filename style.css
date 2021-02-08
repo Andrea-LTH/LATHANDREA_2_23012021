@@ -36,21 +36,21 @@ header p a
 
 
 
-nav ul
+.nav_top ul
 {
     font-family:"Raleway";
     display: flex;
     list-style-type: none;   
 }
 
-nav a
+.nav_top a
 {
     margin-left: 25px;
     text-decoration: none;
     color:black;        
 }
 
-nav a:hover
+.nav_top a:hover
 {
     color: #0065fc;
     border-top: #0065FC solid 2px;
@@ -235,6 +235,7 @@ article
 #auberge,#hotel_port,#hotel_mouettes,#hotel_mer,#auberge_panier,#hotel_amina
 {
     background-color: white;
+    border-radius: 15px;
     width: 220px;
     height: 200px;
     margin: 20px;
@@ -243,13 +244,17 @@ article
 .img
 {
     height: 50%;
-    width: 100%;
+    width: 97%;
     display: flex; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    border-radius: 15px 15px 0px 0px; 
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .auberge_img
@@ -338,12 +343,16 @@ article
 {
     background: url("../LathAndrea_2_23012021/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
     height: 50%;
-    width: 100%; 
+    width: 97%; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
    
 }
 
@@ -511,7 +520,122 @@ aside
     display: flex;
 }
 
+/*MISE EN PAGE ACTIVITES A MARSEILLE*/
+.image1
+{
+    height: 90%;
+    width: 100%;
+    display: flex; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.image2
+{
+    height: 80%;
+    width: 100%;
+    display: flex; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+
+#activités
+{
+    margin-top: 40px;
+}
+
+#activités a 
+{
+    text-decoration: none;
+    font-family: "Raleway";
+    color: black;
+}
+
+
+#vieux_port,#parc_national
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 250px;
+    height: 400px;
+}
+
+#le_fort,#frioul,#notre_dame,#parc_longchamp
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+}
+    
+
+
+.vieux_port_img
+{
+    background-image:url("../LathAndrea_2_23012021/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+.le_fort_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+.ile_frioul_img
+{
+    background-image:url("../LathAndrea_2_23012021/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg") ;
+}
+
+.parc_national_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+.notre_dame_img
+{
+    background-image:url("../LathAndrea_2_23012021/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg") ;
+}
+
+.parc_longchamp_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
 
 
 /*FOOTER*/
+.nav_bottom ul
+{
+    font-family:"Raleway";
+    list-style-type: none;
+}
 
+.nav_bottom a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.nav_bottom li
+{
+    padding-top: 10px;  
+}
+.nav_bottom h4
+{
+    font-family:"Raleway";
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+footer
+{
+    background-color: #f0f0f0;
+    display: flex;
+    margin-top:30px;
+}
