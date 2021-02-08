@@ -1,0 +1,517 @@
+@font-face 
+{
+    font-family: "Raleway";
+    src: url("../P2_V3/raleway/Raleway-Regular.ttf");
+    src:url("../P2_V3/raleway/Raleway-Bold.ttf") format("ttf"),
+        url("../P2_V3/raleway/Raleway-Light.ttf") format("ttf"),
+        url("../P2_V3/raleway/Raleway-Black.ttf") format("ttf"),
+        url("../P2_V3/raleway/Raleway-Medium.ttf") format("ttf");
+    font-style: normal;
+}
+
+/*header mise en page*/
+
+#bloc_page
+{
+    width: auto;
+    margin: auto;
+    
+}
+header
+{
+    display: flex;
+    padding-top:40px;
+}
+
+
+header p a
+{
+    display: flex;
+    margin-left: 25px;
+    color:#0065FC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+nav ul
+{
+    font-family:"Raleway";
+    display: flex;
+    list-style-type: none;   
+}
+
+nav a
+{
+    margin-left: 25px;
+    text-decoration: none;
+    color:black;        
+}
+
+nav a:hover
+{
+    color: #0065fc;
+    border-top: #0065FC solid 2px;
+}
+
+header h1
+{
+    font-family:"Raleway";
+    font-weight:100px;
+    font-size:1.2em;
+
+}
+
+header h2
+{
+    font-family: "Raleway";
+    font-weight: normal;
+    font-size: 0.8em;
+    padding-top: 1px;
+}
+
+#search
+{
+    display: flex;
+}
+#map
+{ 
+    background-color: #f0f0f0;
+    height:30px;
+    width: 30px;
+    border: #f0f0f0 solid ;
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire
+{
+    border: #f0f0f0 solid 1px;
+    height: 36px;
+    width: 160px;
+    margin-left: 0%;
+    margin-right: 0px;
+}
+
+.rechercher
+{
+    color:white;
+    background-color: #0065FC;
+    height: 36px;
+    width: 90px;
+    font-family: "Raleway";
+    font-size: 0.7em;
+    border-radius: 0px 10px 10px 0px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#rechercher
+{
+    background-color: #0065FC;
+    border: #0065FC solid 1px;
+    border-radius: 0px 8px 8px 0px;;
+}
+
+
+/*FILTRES*/
+
+#Filtres
+{
+    display:flex ;
+    padding-top: 20px;
+}
+
+#Filtres h3
+{
+    font-family: "Raleway";
+    font-size: 0.9em;
+    margin-right: 25px;
+    
+}
+
+#Filtres h2
+{
+    font-family: "Raleway";
+    font-size: 1em;
+    
+}
+
+
+
+#billet,#personnage,#coeur,#animaux
+{
+    background-color: #deebff;
+    height: 35px;
+    width: 35px;
+    color: #0065FC;
+    font-size: 0.8em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#eco,#familial,#romantique,#dog
+{
+    font-size: 0.8em;
+    border: #f0f0f0 solid 1px;
+    border-radius: 50px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info
+{
+    font-size: 0.7em;
+    color: #0065FC;
+    background-color: white;
+    height: 15px;
+    width: 10px;
+    border: #f0f0f0 solid 1px;
+    border-radius:60px;
+    display: flex;
+    margin-left: 3px;
+    margin-right: 10px;
+    padding-left:3px;
+    padding-right: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.disponibilite
+{   display: flex;
+    font-family: "Raleway";
+    align-items: baseline;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+/*SECTION HEBERGEMENT + PHOTOS*/
+
+section
+{
+    display:flex;
+}
+
+article
+{
+    background-color: #f0f0f0;
+    border:#f0f0f0 solid;
+    border-radius: 20px;
+    width: 70%;
+    height: 600px;
+    margin-right:10px;
+    font-family: "Raleway";  
+}
+
+.les_hébergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:0;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+.description
+{
+    font-weight: normal;
+    color: black;
+}
+/*PHOTO 1----------------------------------------------------*/
+#auberge,#hotel_port,#hotel_mouettes,#hotel_mer,#auberge_panier,#hotel_amina
+{
+    background-color: white;
+    width: 220px;
+    height: 200px;
+    margin: 20px;
+}
+
+.img
+{
+    height: 50%;
+    width: 100%;
+    display: flex; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; 
+}
+
+.auberge_img
+{   
+   
+    background-image: url('../LathAndrea_2_23012021/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');   
+ 
+}
+
+#auberge ul
+{
+    display: flex; 
+}
+
+#auberge li
+{
+    list-style-type: none;
+    color: #0065FC;
+}
+
+.star
+{
+    color: #f0f0f0;
+}
+
+#auberge a
+{
+    font-family: "Raleway";
+    text-decoration: none;
+}
+
+#auberge_description h6
+{
+    padding-top: 2px;
+}
+
+/*PHOTO2-----------------------------------------------------------*/
+
+.hotel_port_img
+{   
+    background-image: url('../LathAndrea_2_23012021/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+}
+
+#hotel_port a
+{
+    text-decoration: none;
+}
+
+#hotel_port li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#hotel_port ul
+{
+    display: flex;
+}
+
+/*PHOTO 3------------------------------------*/
+
+.hotel_mouettes_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+#hotel_mouettes a
+{
+    text-decoration: none;
+}
+
+#hotel_mouettes li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#hotel_mouettes ul
+{
+    display: flex;
+}
+
+/*PHOTO 4-------------------------------------------------*/
+
+.hotel_mer_img
+{
+    background: url("../LathAndrea_2_23012021/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    height: 50%;
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; 
+   
+}
+
+#hotel_mer a
+{
+    text-decoration: none;
+}
+
+#hotel_mer li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#hotel_mer ul
+{
+    display: flex;
+}
+
+/*PHOTO 5------------------------------*/
+.auberge_panier_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+
+#auberge_panier a
+{
+    text-decoration: none;
+}
+
+#auberge_panier li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#auberge_panier ul
+{
+    display: flex;
+}
+
+/*PHOTO 6 -----------------------------------------*/
+.hotel_amina_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+
+#hotel_amina a
+{
+    text-decoration: none;
+}
+
+#hotel_amina li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#hotel_amina ul
+{
+    display: flex;
+}
+
+
+/*MISE EN PAGE BLOC DE DROITE*/
+
+aside
+{
+    
+    background-color: #f0f0f0;
+    border:#f0f0f0 solid;
+    border-radius: 20px;
+    width: 30%;
+    height: 600px;
+    margin-left: 20px;
+    font-family: "Raleway";
+}
+
+.image
+{
+    height: 90%;
+    width: 80%;
+    display: flex; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; 
+}
+
+#hotel_soleil,#chambre_hotes,#hotel_bleu_blanc
+{
+    display:flex;
+    background-color: white;
+    width:350px;
+    height: 150px;
+    margin-top: 40px;
+    margin: 20px;
+}
+
+/*PHOTO 1--------------------------------*/
+
+.hotel_soleil_img
+{
+    background-image:url("../LathAndrea_2_23012021/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+#hotel_soleil a
+{
+    text-decoration: none;
+}
+
+#hotel_soleil li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#hotel_soleil ul
+{
+    display: flex;
+}
+
+/*PHOTO 2--------------------------------*/
+.chambre_hotes_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+#chambre_hotes a
+{
+    text-decoration: none;
+}
+
+#chambre_hotes li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#chambre_hotes ul
+{
+    display: flex;
+}
+
+/*PHOTO 3 --------------------------------*/
+
+.hotel_bleu_blanc_img
+{
+    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+#hotel_bleu_blanc a
+{
+    text-decoration: none;
+}
+
+#hotel_bleu_blanc li
+{   
+    color:#0065FC;
+    list-style-type: none;
+}
+
+#hotel_bleu_blanc ul
+{
+    display: flex;
+}
+
+
+
+/*FOOTER*/
+
