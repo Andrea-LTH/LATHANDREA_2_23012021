@@ -10,20 +10,27 @@
 }
 
 /*header mise en page*/
-
+body
+{
+    margin:0;
+}
 #bloc_page
 {
-    width: auto;
     margin: auto;
-    
+    padding-top:30px   
 }
 header
 {
     display: flex;
     padding-top:40px;
+    margin-left: 20px;
 }
 
-
+.navigation
+{
+    display: flex;
+    padding-left: 380px;
+}
 header p a
 {
     display: flex;
@@ -33,14 +40,12 @@ header p a
     font-weight: bold;
 }
 
-
-
-
 .nav_top ul
 {
     font-family:"Raleway";
     display: flex;
-    list-style-type: none;   
+    list-style-type: none;
+    
 }
 
 .nav_top a
@@ -53,34 +58,31 @@ header p a
 .nav_top a:hover
 {
     color: #0065fc;
-    border-top: #0065FC solid 2px;
+    border-top: #0065FC solid 2px ;
 }
 
-header h1
+header 
 {
     font-family:"Raleway";
-    font-weight:100px;
-    font-size:1.2em;
-
 }
 
-header h2
+header h4
 {
-    font-family: "Raleway";
     font-weight: normal;
-    font-size: 0.8em;
-    padding-top: 1px;
 }
 
 #search
 {
     display: flex;
+    margin-left: 20px;
+    padding-top: 3px;
 }
+
 #map
 { 
     background-color: #f0f0f0;
-    height:30px;
-    width: 30px;
+    height:40px;
+    width: 40px;
     border: #f0f0f0 solid ;
     border-radius: 8px 0px 0px 8px;
     display: flex;
@@ -91,7 +93,7 @@ header h2
 .formulaire
 {
     border: #f0f0f0 solid 1px;
-    height: 36px;
+    height:46px;
     width: 160px;
     margin-left: 0%;
     margin-right: 0px;
@@ -101,15 +103,13 @@ header h2
 {
     color:white;
     background-color: #0065FC;
-    height: 36px;
-    width: 90px;
-    font-family: "Raleway";
-    font-size: 0.7em;
+    height: 45px;
+    width: 100px;
+    font-family: "Raleway";    
     border-radius: 0px 10px 10px 0px;    
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
 }
 
 #rechercher
@@ -122,30 +122,28 @@ header h2
 
 /*FILTRES*/
 
-#Filtres
+.filtres
 {
     display:flex ;
     padding-top: 20px;
+    margin-left: 20px;
+    font-family: "Raleway";
+    justify-content: baseline;
+    align-items: center;   
 }
 
-#Filtres h3
+.filtres a 
 {
-    font-family: "Raleway";
-    font-size: 0.9em;
-    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.filtres a :hover
+{   
+    background-color:#deebff;
     
 }
-
-#Filtres h2
-{
-    font-family: "Raleway";
-    font-size: 1em;
-    
-}
-
-
-
-#billet,#personnage,#coeur,#animaux
+.filtres i
 {
     background-color: #deebff;
     height: 35px;
@@ -153,272 +151,180 @@ header h2
     color: #0065FC;
     font-size: 0.8em;
     border-radius: 50px;
+    margin-left:0;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;    
 }
-
-#eco,#familial,#romantique,#dog
+.les-filtres
 {
-    font-size: 0.8em;
+    display: flex;
     border: #f0f0f0 solid 1px;
     border-radius: 50px;
-    margin-left: 0;
     margin-right: 20px;
-    padding-left:10px;
-    padding-right: 10px;
+    margin-left: 20px;
+    padding-right:15px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#info
+.info
 {
-    font-size: 0.7em;
+    background-color: blanc;
+    height: 20px;
+    width: 20px;
     color: #0065FC;
-    background-color: white;
-    height: 15px;
-    width: 10px;
+    font-size: 0.7em;
     border: #f0f0f0 solid 1px;
-    border-radius:60px;
-    display: flex;
-    margin-left: 3px;
+    border-radius: 50px;
+    margin-left: 20px;
     margin-right: 10px;
-    padding-left:3px;
-    padding-right: 3px;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
 
-.disponibilite
+.disponibilites
 {   display: flex;
     font-family: "Raleway";
+    font-size: 0.8em;   
     align-items: baseline;
-    font-weight: normal;
-    font-size: 0.8em;
 }
 
 /*SECTION HEBERGEMENT + PHOTOS*/
-
 section
 {
-    display:flex;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
-article
+.article
 {
     background-color: #f0f0f0;
-    border:#f0f0f0 solid;
     border-radius: 20px;
     width: 70%;
-    height: 600px;
-    margin-right:10px;
-    font-family: "Raleway";  
+    font-family: "Raleway";   
 }
-
-.les_hébergements
+.article h3
 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:0;
-    margin-left: 10px;
-    margin-right: 10px;    
+    padding-left: 20px;
+    padding-top:10px
 }
 
-.description
-{
-    font-weight: normal;
-    color: black;
-}
-/*PHOTO 1----------------------------------------------------*/
-#auberge,#hotel_port,#hotel_mouettes,#hotel_mer,#auberge_panier,#hotel_amina
-{
-    background-color: white;
-    border-radius: 15px;
-    width: 220px;
-    height: 200px;
-    margin: 20px;
-}
-
-.img
-{
-    height: 50%;
-    width: 97%;
-    display: flex; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px 15px 0px 0px; 
-    margin-top: 3px;
-    margin-left: 3px;
-    margin-right: 3px;
-}
-
-.auberge_img
-{   
-   
-    background-image: url('../LathAndrea_2_23012021/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');   
- 
-}
-
-#auberge ul
-{
-    display: flex; 
-}
-
-#auberge li
+#les-hebergements
 {
     list-style-type: none;
-    color: #0065FC;
+    display: flex;
+    justify-content: space-around; 
+}
+
+#les-hebergements>li
+{
+    background-color: white;
+    border-radius: 10%;
+    height: 180px;
+    width: 220px;
+    box-shadow: 1px 1px 6px silver;
+}
+#les-hebergements a
+{
+    color: black;
+    text-decoration: none;
+}
+#les-hebergements h4,#les-hebergements p
+{
+   margin-bottom: 2%;
+   margin-top:2%;
+   padding-top: 0;
+}
+.les-hebergements h3 a
+{ 
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .star
 {
     color: #f0f0f0;
 }
-
-#auberge a
+.stars
 {
-    font-family: "Raleway";
-    text-decoration: none;
+    color: #0065FC;
 }
-
-#auberge_description h6
+.img
 {
-    padding-top: 2px;
-}
-
-/*PHOTO2-----------------------------------------------------------*/
-
-.hotel_port_img
-{   
-    background-image: url('../LathAndrea_2_23012021/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-}
-
-#hotel_port a
-{
-    text-decoration: none;
-}
-
-#hotel_port li
-{   
-    color:#0065FC;
-    list-style-type: none;
-}
-
-#hotel_port ul
-{
-    display: flex;
-}
-
-/*PHOTO 3------------------------------------*/
-
-.hotel_mouettes_img
-{
-    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-
-#hotel_mouettes a
-{
-    text-decoration: none;
-}
-
-#hotel_mouettes li
-{   
-    color:#0065FC;
-    list-style-type: none;
-}
-
-#hotel_mouettes ul
-{
-    display: flex;
-}
-
-/*PHOTO 4-------------------------------------------------*/
-
-.hotel_mer_img
-{
-    background: url("../LathAndrea_2_23012021/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    height: 50%;
-    width: 97%; 
+    height: 55%;
+    width: 97%;    
+    padding: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
-    align-items: center;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     margin-top: 3px;
     margin-left: 3px;
-    margin-right: 3px;
-   
+    margin-right: 3px; 
 }
 
-#hotel_mer a
+.descriptions
 {
-    text-decoration: none;
+    padding-left: 6px;
 }
+/*PHOTO 1----------------------------------------------------*/
 
-#hotel_mer li
+.auberge-img
 {   
-    color:#0065FC;
-    list-style-type: none;
+    background-image: url("images/marcus-loke-WQJvWU_HZFo-unsplash.jpg");   
 }
 
-#hotel_mer ul
+/*PHOTO2-----------------------------------------------------------*/
+
+.hotel-port-img
+{   
+    background-image: url('images/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+}
+
+/*PHOTO 3------------------------------------*/
+
+.hotel-mouettes-img
 {
-    display: flex;
+    background-image: url("images/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+/*PHOTO 4-------------------------------------------------*/
+
+.hotel-mer-img
+{
+    background: url("images/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 /*PHOTO 5------------------------------*/
-.auberge_panier_img
+.auberge-panier-img
 {
-    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-
-#auberge_panier a
-{
-    text-decoration: none;
-}
-
-#auberge_panier li
-{   
-    color:#0065FC;
-    list-style-type: none;
-}
-
-#auberge_panier ul
-{
-    display: flex;
+    background-image: url("images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 /*PHOTO 6 -----------------------------------------*/
-.hotel_amina_img
+.hotel-amina-img
 {
-    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-}
-
-#hotel_amina a
-{
-    text-decoration: none;
-}
-
-#hotel_amina li
-{   
-    color:#0065FC;
-    list-style-type: none;
-}
-
-#hotel_amina ul
-{
-    display: flex;
+    background-image: url("images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 
 /*MISE EN PAGE BLOC DE DROITE*/
+aside h3
+{
+    padding-left: 30px;    
+}
 
+.line
+{
+    margin-left:130px;
+}
 aside
 {
     
@@ -426,106 +332,98 @@ aside
     border:#f0f0f0 solid;
     border-radius: 20px;
     width: 30%;
-    height: 600px;
     margin-left: 20px;
+    margin-right: 20px;
     font-family: "Raleway";
 }
 
-.image
+#populaire a
 {
-    height: 90%;
-    width: 80%;
-    display: flex; 
+    text-decoration: none;
+    color: black;
+}
+
+.les-populaires
+{
+    display:flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px silver;
+    width:320px;
+    height: 130px;
+    margin: 20px;
+    padding:5px;
+}
+
+.les-populaires ul 
+{
+    list-style-type: none;
+    display: flex;
+    padding-left:0;
+}
+
+.les-populaires h4, .les-populaires p 
+{
+    padding-left:0;  
+    margin-top:1%;
+    margin-bottom: 2%;
+    padding-top: 1%;
+}
+
+
+
+.description
+{
+    margin-left:20px;
+}
+
+.description li
+{
+    padding-left:0;
+    margin-top: 30px;
+}
+/*PHOTO 1--------------------------------*/
+
+.hotel-soleil
+{
+    background-image:url("images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+
+}
+
+.chambre-hotes
+{
+    background-image: url("images/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+.hotel-bleu-blanc
+{
+    background-image: url("images/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+.populaires-img
+{
+    height: 100%;
+    width: 120px;
+    border-radius: 15px 0px 0px 15px;   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
-    align-items: center; 
 }
 
-#hotel_soleil,#chambre_hotes,#hotel_bleu_blanc
-{
-    display:flex;
-    background-color: white;
-    width:350px;
-    height: 150px;
-    margin-top: 40px;
-    margin: 20px;
-}
 
-/*PHOTO 1--------------------------------*/
-
-.hotel_soleil_img
-{
-    background-image:url("../LathAndrea_2_23012021/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-#hotel_soleil a
-{
-    text-decoration: none;
-}
-
-#hotel_soleil li
-{   
-    color:#0065FC;
-    list-style-type: none;
-}
-
-#hotel_soleil ul
-{
-    display: flex;
-}
-
-/*PHOTO 2--------------------------------*/
-.chambre_hotes_img
-{
-    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-
-#chambre_hotes a
-{
-    text-decoration: none;
-}
-
-#chambre_hotes li
-{   
-    color:#0065FC;
-    list-style-type: none;
-}
-
-#chambre_hotes ul
-{
-    display: flex;
-}
-
-/*PHOTO 3 --------------------------------*/
-
-.hotel_bleu_blanc_img
-{
-    background-image: url("../LathAndrea_2_23012021/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
-
-#hotel_bleu_blanc a
-{
-    text-decoration: none;
-}
-
-#hotel_bleu_blanc li
-{   
-    color:#0065FC;
-    list-style-type: none;
-}
-
-#hotel_bleu_blanc ul
-{
-    display: flex;
-}
 
 /*MISE EN PAGE ACTIVITES A MARSEILLE*/
+.activités-marseille h3
+{
+    font-family: "Raleway";
+    margin-left:20px;
+    margin-top: 30px;
+}
+
 .image1
 {
-    height: 90%;
+    height: 95%;
     width: 100%;
-    display: flex; 
+    display:flex ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -537,8 +435,8 @@ aside
 .image2
 {
     height: 80%;
-    width: 100%;
-    display: flex; 
+    width: 100%; 
+    display: flex;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -550,8 +448,14 @@ aside
 #activités
 {
     margin-top: 40px;
+    display: flex;  
 }
 
+#activités h5
+{
+    margin-left: 15px;
+    margin-top: 5%;
+}
 #activités a 
 {
     text-decoration: none;
@@ -559,74 +463,95 @@ aside
     color: black;
 }
 
-
-#vieux_port,#parc_national
+.activites1
 {
-    background-color: white;
-    border-radius: 15px;
-    width: 250px;
-    height: 400px;
+    display: flex;
+    margin: 30px;
+    justify-content: first baseline;
+    align-items:stretch;
+    
+}
+.activites2
+{
+    display: flex;
+    margin:30px;
+    flex-direction: column;
+    justify-content: space-between;    
+  
 }
 
-#le_fort,#frioul,#notre_dame,#parc_longchamp
+#vieux-port,#parc-national
+{
+    background-color:white;   
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px silver;
+    width: 250px;
+    height: 400px;
+    padding-bottom: 30px;
+}
+
+#le-fort,#frioul,#notre-dame,#parc-longchamp
 {
     background-color: white;
     border-radius: 15px;
+    box-shadow: 1px 1px 6px silver;
     width: 300px;
     height: 200px;
 }
-    
 
-
-.vieux_port_img
+.vieux-port-img
 {
-    background-image:url("../LathAndrea_2_23012021/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-image:url("images/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 
-.le_fort_img
+.le-fort-img
 {
-    background-image: url("../LathAndrea_2_23012021/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-image: url("images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 
-.ile_frioul_img
+.ile-frioul-img
 {
-    background-image:url("../LathAndrea_2_23012021/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg") ;
+    background-image:url("images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg") ;
 }
 
-.parc_national_img
+.parc-national-img
 {
-    background-image: url("../LathAndrea_2_23012021/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-image: url("images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 
-.notre_dame_img
+.notre-dame-img
 {
-    background-image:url("../LathAndrea_2_23012021/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg") ;
+    background-image:url("images/florian-wehde-xW9e8gdotxI-unsplash.jpg") ;
 }
 
-.parc_longchamp_img
+.parc-longchamp-img
 {
-    background-image: url("../LathAndrea_2_23012021/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-image: url("images/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
 
 /*FOOTER*/
-.nav_bottom ul
+.nav-bottom
+{
+    margin-right: 100px;
+}
+.nav-bottom ul
 {
     font-family:"Raleway";
     list-style-type: none;
 }
 
-.nav_bottom a
+.nav-bottom a
 {
     text-decoration: none;
     color: black;
 }
 
-.nav_bottom li
+.nav-bottom li
 {
     padding-top: 10px;  
 }
-.nav_bottom h4
+.nav-bottom h4
 {
     font-family:"Raleway";
     margin-left: 40px;
@@ -639,3 +564,6 @@ footer
     display: flex;
     margin-top:30px;
 }
+
+
+
