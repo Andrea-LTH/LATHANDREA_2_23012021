@@ -2,10 +2,7 @@
 {
     font-family: "Raleway";
     src: url("../P2_V3/raleway/Raleway-Regular.ttf");
-    src:url("../P2_V3/raleway/Raleway-Bold.ttf") format("ttf"),
-        url("../P2_V3/raleway/Raleway-Light.ttf") format("ttf"),
-        url("../P2_V3/raleway/Raleway-Black.ttf") format("ttf"),
-        url("../P2_V3/raleway/Raleway-Medium.ttf") format("ttf");
+    src:url("../P2_V3/raleway/Raleway-Bold.ttf") format("ttf");
     font-style: normal;
 }
 
