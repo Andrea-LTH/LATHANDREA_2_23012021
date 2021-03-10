@@ -973,9 +973,22 @@ footer
 }
 @media all and (min-width:1136px) and (max-width: 1265.98px)
 {
+    aside
+    {
+        width: 50%;
+    }
+    .article
+    {
+        width: 60%;
+    }
     .les-populaires
     {
+        width: 90%;
         height: 200px;
+    }
+    .populaires-img
+    {
+        width:40%;
     }
     .les-activites1
     {
