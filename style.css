@@ -12,27 +12,44 @@
 /*header mise en page*/
 #bloc-page
 {
-    margin:0;
     justify-content: center;
     align-items: center;
 }
+.reservia
+{
+    padding-top:20px;
+}
 .nav-top 
 {
-
-    width:auto;
-    border:2px solid;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.nav
+.nav-top p
+{
+    text-decoration: none;
+    color:#0065FC;  
+    font-weight: bold;
+}
+.nav-top a
 {
     color: black;
     text-decoration: none;
-    margin-left: 30px;
-    margin-right: 20px;
 }
-.nav a:hover
+.nav
 {
-    color: #0065fc;
-    border-top: #0065FC solid 2px ;
+    padding:40px 40px 0 40px;
+    border-top:3px solid transparent;
+    margin-top:-20px;
+}
+.nav-top .nav:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+.inscription
+{
+    padding:25px 30px 0 30px;
 }
 .header
 {
@@ -42,13 +59,6 @@
     padding-top: 20px;
     margin-left: 20px;
   
-}
-.inscription  
-{
-    text-decoration: none;
-    color:#0065FC;  
-    font-weight: bold;
-    margin-right: 20px;
 }
 .titres
 {
@@ -61,7 +71,7 @@
     font-weight: normal;
     margin-bottom:1%;
 }
-#search
+.search
 {
     display: flex;
     margin-left: 20px;
@@ -90,6 +100,7 @@
 {
     color:white;
     background-color: #0065FC;
+    border:none;
     height: 50px;
     width: 130px;
     font-family: "Raleway"; 
@@ -136,7 +147,7 @@
     color: #0065FC;
     font-size: 1em;
     border-radius: 50px;
-    margin-left:0;
+    margin-left:-4px;
     margin-right: 10px;
     display: flex;
     justify-content: center;
@@ -195,6 +206,13 @@ section
     border-radius: 20px;   
     font-family: "Raleway";   
 }
+.hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
 .les-hebergements
 {    
     background-color: white;
@@ -202,16 +220,9 @@ section
     border-radius: 20px;
     height: 180px;
     width: 220px;
-    box-shadow: 1px 1px 6px silver;
+    box-shadow: 8px 8px 8px silver;
     padding:5px;
     margin:20px;
-}
-.hebergements
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;   
 }
 .hebergements-img
 {
@@ -327,11 +338,14 @@ aside
 {
     background-color: #f0f0f0;
     border-radius: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
     font-family: "Raleway";
 }
-
+.line
+{
+    position: absolute;
+    right: 4%;
+}
 .populaire a
 {
     text-decoration: none;
@@ -343,8 +357,9 @@ aside
     display:flex;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 1px 1px 6px silver;
-    width: 350px;
+    box-shadow: 8px 8px 8px silver;
+    align-items: center;    
+    width: 320px;
     height: 130px;
     margin: 20px;
     padding:5px;
@@ -416,7 +431,7 @@ aside
 {
     font-family: "Raleway";
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .activites1-img
 {
@@ -465,8 +480,8 @@ aside
 {
     background-color:white;   
     border-radius: 15px;
-    box-shadow: 1px 1px 6px silver;
-    width: 280px;
+    box-shadow: 8px 8px 8px silver;
+    width: 260px;
     height: 410px;
     padding-bottom: 30px;
 }
@@ -474,11 +489,10 @@ aside
 {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 1px 1px 6px silver;
+    box-shadow: 8px 8px 8px silver;
     width: 300px;
     height: 200px;
 }
-
 .vieux-port
 {
     background-image:url("images/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
@@ -546,112 +560,14 @@ footer
     width: 100%;
 }
 
-/* -----------------------------------------RESPONSIVE----------------------------------------*/
-@media all and (min-width:768px) and (max-width:991.99px)
-{
-        
-        section
-    {
-        flex-direction:column-reverse;
-    }
+/* --------------------------------------RESPONSIVE----BREAKPOINT-1--------------------------------------*/
 
-    .inscription
-    {
-        position:absolute;
-    }
-    
-    aside
-    {
-        width:auto;
-    }
-    #populaire
-    {
-        display: flex;
-    }
-    .les-populaires
-    {
-        width: auto;
-        height:130px ;
-    }
-    .article
-    {
-        margin-top: 40px;
-    }
-    .les-hebergements 
-    {
-        width:280px;
-        height: 180px;
-    }
-    .hebergements
-    {
-        flex-wrap: wrap;
-    }
-
-}
-
-@media all and (min-width:576px) and (max-width:767.98px)
-{    
+@media all  and (min-width:320px) and (max-width:575.98px)
+{   
     section
-{
-    flex-direction:column-reverse;
-}
-
-.filtres
-{
-    flex-wrap: wrap;    
-}
-aside
-{
-    width:auto;
-}
-#populaire
-{
-    flex-direction: column;
-}
-.les-populaires
-{
-    width: auto;
-    height:150px ;
-}
-.populaires-img
-{
-    width:30%;
-}
-.article
-{
-    margin-top: 40px;
-}
-.les-hebergements 
-{
-    width:280px;
-    height: 180px;
-}
-.hebergements
-{
-    flex-wrap: wrap;
-}
-
-.activites
-{
-    flex-direction: column;
-}
-.les-activites1,.les-activites2
-{
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 1px 1px 6px silver;
-    width:350px;
-    height: 200px;
-}   
-.activites1-img
-{
-    height: 90%;
-    width: 100%;
-}      
-
-}
-@media all  and (min-width: 320px) and (max-width:575.98px)
-{    
+    {
+        margin: 0;
+    }
     .header
     {
         margin:0;
@@ -659,7 +575,35 @@ aside
         flex-direction: column;
         align-items: flex-start;
     }
-    .nav-top
+    .titres,.search,.filtres,.info
+    {
+        margin:0;
+    }
+    .reservia
+    {
+        padding-top: 3px;
+        padding-left: 10px;
+    }
+    .inscription
+    {
+       position: absolute;    
+       padding:0; 
+       margin: 0;
+       top: 5%;
+       right: 10px;
+    }
+   .nav-top .nav
+   {
+       padding: 20px 15px 20px 15px;
+       border-bottom: 3px solid rgb(240, 238, 238);
+   }  
+   .nav-top .nav:hover
+   {
+       border-top:none;
+       border-bottom: 3px solid #0065FC;
+       width: 50%;
+   }
+   .nav-top 
     {
         width:100%;
         display: flex;
@@ -670,32 +614,29 @@ aside
         display:block;
         margin:0;
         text-align:center;
-    }
-        section
-    {
-        flex-direction:column-reverse;
-    }
-/*------------------------A MOFIDIER----------------------*/
-   .inscription
-   {
-       position: absolute;
-       top:0;
-       right:0;
-   }
-/*------------------------A MOFIDIER----------------------*/
+    }  
     .rechercher
     {
         display: none;
     }
-
+    #map
+    {
+        width: 55px;
+    }
+    .formulaire
+    {
+        width: 70%;
+    }
     .loupe
     {
         color:white;
+        border:none;
+        margin-left: -20px;
         background-color: #0065FC;
         height: 50px;
-        width: 70px;
+        width: 55px;;
         font-size: 1em;  
-        border-radius: 0px 18px 18px 0px;    
+        border-radius:15px;    
         display: flex;
         justify-content: center;
         align-items: center;   
@@ -704,45 +645,347 @@ aside
     {
         flex-wrap: wrap;
     }
+    section
+    {
+        flex-direction:column-reverse;
+    }
     aside
     {
-        width:auto;
+        width:100%;
+        margin: 0;
+    }
+    .line
+    {
+        position: absolute;
+        right: 8%;
     }
     #populaire
     {
         flex-direction: column;
+        padding:10px;
     }
     .les-populaires
     {
-        width: auto;
+        width:85%;
+    }
+    .populaires-img
+    {
+        width:30%;
+    }
+    .article
+    {
+        background-color:white;    
+    }
+    .hebergements a 
+    {
+        display: block;
+        width: 100%;
+    }
+    .les-hebergements
+    {
+        margin-left: 0;
+        margin-top:0;
+        width:95%;
+        height: 200px;
+    } 
+    .descriptions h4,.descriptions p
+    {
+        margin-bottom: 0;
+        margin-top:1%;
+        padding-top: 0;
+    }
+    .les-hebergements ul
+    {
+          margin-top: 4px;    
+    }
+    .titres-h3 h3
+    {
+        padding-left: 10px;
+        margin-top: 0;
+    }
+    .activites,.hebergements
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .activites-marseille h3
+    {
+        margin-top: 10px;
+        margin-left: 9px;
+    }
+    .activites a
+    {
+        display: block;   
+        margin-left:0;
+        width: 95%;
+    }
+    .les-activites1,.les-activites2
+    {
+        width: 100%;
+        height: 180px;
+    }
+    .les-activites1 h5,.les-activites2 h5
+    {   
+        margin-left: 15px;
+        margin-top:6px;
+    }
+    .bis,.les-activites2
+    {
+        margin-top: 15px;
+    }
+    .bis
+    {
+        margin-bottom: 15px;
+    }
+    .bloc-activites a 
+    {
+        margin-left: 0;
+        padding-left: 5px;
+    }
+    .bloc-activites
+    {
+        width: 100%;
+        margin: 0;
+    }
+    footer
+    {
+        flex-direction: column;  
+    }
+}
+/* --------------------------------------RESPONSIVE----BREAKPOINT-1-bis--------------------------------------*/
+@media all and (min-width:575px) and (max-width:595.98)
+{
+    .inscription
+    {
+       position: absolute;    
+       padding:0; 
+       margin: 0;
+       top: 5%;
+       right: 10px;
+    }
+   .nav-top .nav
+   {
+       padding: 20px 15px 20px 15px;
+       border-bottom: 3px solid rgb(240, 238, 238);
+   }  
+   .nav-top .nav:hover
+   {
+       border-top:none;
+       border-bottom: 3px solid #0065FC;
+       width: 50%;
+   }
+   .nav-top 
+    {
+        width:100%;
+        display: flex;
+    }
+    .nav-top>a
+    {
+        width: 50%;
+        display:block;
+        margin:0;
+        text-align:center;
+    }  
+    .article
+    {
+        background-color:#f0f0f0;    
+    }
+}
+/*-------------------------------------------------BREAKPOINT-2----------------------------------------------*/
+@media all and (min-width:576px) and (max-width: 875.98px)
+{
+    section
+    {
+        flex-direction:column-reverse;
+        margin:0;
+    }
+    .titres,.search,.filtres,.info
+    {
+        margin:0;
+    }  
+    .formulaire
+    {
+        width: 50%;
+    }
+    .loupe
+    {
+        display: none;
+    } 
+    aside
+    {
+        width:100%;
+        margin: 0;
+    }
+    .line
+    {
+        position: absolute;
+        right: 8%;
+    }
+    #populaire
+    {
+        flex-direction: column;
+        padding:10px;
+    }
+    .les-populaires
+    {
+        width:90%;
+    }
+    .populaires-img
+    {
+        width:30%;
+    }
+ 
+    .les-hebergements
+    {
+        margin-left: 10px;
+        margin-top:0;
+        width:220px;
+        height: 170px;
+    } 
+    .descriptions h4,.descriptions p
+    {
+        margin-bottom: 0;
+        margin-top:1%;
+        padding-top: 0;
+    }
+    .les-hebergements ul
+    {
+          margin-top: 4px;    
+    }
+    .titres-h3 h3
+    {
+        padding-left: 10px;
+        margin-top: 0;
+    }
+    .article
+    {
+        margin-top:10px;
+    }
+    .hebergements
+    {
+        width: 100%;
+    }
+    .activites-marseille h3
+    {
+        margin-top: 10px;
+        margin-left: 9px;
+    }
+    .activites a
+    {
+        display: block;   
+        margin-left:0;
+        width: 95%;
+    }
+    .les-activites1,.les-activites2
+    {
+        width: 100%;
+        height: 180px;
+    }
+    .les-activites1 h5,.les-activites2 h5
+    {   
+        margin-left: 15px;
+        margin-top:6px;
+    }
+    .bis,.les-activites2
+    {
+        margin-top: 15px;
+    }
+    .bis
+    {
+        margin-bottom: 15px;
+    }
+    .bloc-activites a 
+    {
+        margin-left: 0;
+        padding-left: 12px;
+    }
+    .bloc-activites
+    {
+        width: 100%;
+        margin: 0;
+    }
+}
+/*---------------------------------------BREAKPOINT-2-BIS------------------------------------*/
+@media all and (min-width: 796px) and (max-width:875.98px)
+{
+    .activites a
+    {
+        display: block;   
+        margin-left:0;
+        width: 50%;
+    }
+    .bloc-activites
+    {
+        width: 40%;       
+    }
+    .bloc-activites a 
+    {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .les-activites1
+    {
+        height: 400px;
+        width:350px;
+    }    
+    .les-activites2
+    {
+        height: 200px;
+        width:320px;
+    }
+    .bis,.les-activites2
+    {
+        margin-top: 20px;
+    }
+}
+/*-----------------------------BREAKPOINT-3---------------------------------------------------*/
+@media all and (min-width:876px) and (max-width: 1135.98px)
+{   
+    section
+    {
+        flex-direction:column-reverse;
+    }
+    aside
+    {
+        width:100%;
+        margin:0;
+    }
+    .les-populaires
+    {
+        width: 90%;
         height:130px ;
     }
     .populaires-img
     {
         width:30%;
     }
-
     .article
     {
         margin-top: 40px;
+        width: 100%;
     }
-    .activites
+    .les-activites1
     {
-        flex-direction: column;
+        width:370px;
+    }    
+    .les-activites2
+    {
+        width:370px;
     }
-    .les-activites1,.les-activites2
+
+}
+@media all and (min-width:1136px) and (max-width: 1265.98px)
+{
+    .les-populaires
     {
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 1px 1px 6px silver;
-        width: 320px;
         height: 200px;
-    }   
-    
-    footer
+    }
+    .les-activites1
     {
-        flex-direction: column;
-        
+        width:270px;
+    }    
+    .les-activites2
+    {
+        width:250px;
     }
 }
-
